@@ -1,0 +1,4 @@
+Sitemap: http://http://bondelectric.ca/sitemap.xml
+
+User-agent: *
+Disallow: 
