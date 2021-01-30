@@ -137,108 +137,7 @@
 		</div>
 	</div>
 	
-    
-    <div id="hosting" class="section wb" style="background: rgb(248, 248, 248)">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>Investment plans</h3>
-                <p id="serviceTitleHtml" runat="server" class="lead">Read more about groups of <br /> <strong>Investment plans
-  </strong> can we offer you.</p>
-            </div><!-- end title -->
-
-            <div class="row dev-list text-center">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3 class="stylish-header-1">BRONZ</h3>
-                            <h2 class="stylish-title">10%<small>10 DAY</small></h2>
-                        </div>
-                        <!-- end title -->
-                        <ul class="investment-items">
-                            <li>Min Deposit: 50 $</li>
-                            <li>Max Deposit: 600 $</li>
-                            <li>Plan Terms: 10 Days</li>
-                            <li>Total Profit: 10%</li>
-                            <li>Daily Profit: 1%</li>
-                        </ul>
-
-                        <hr> 
-
-                        <a href="#pricing" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
-
-                    </div><!--widget -->
-                </div><!-- end col -->
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3 class="stylish-header-1">Silver</h3>
-                            <h2 class="stylish-title">40%<small>30 DAY</small></h2>
-                        </div>
-                        <!-- end title -->
-                        <ul class="investment-items">
-                            <li>Min Deposit: 50 $</li>
-                            <li>Max Deposit: 600 $</li>
-                            <li>Plan Terms: 10 Days</li>
-                            <li>Total Profit: 10%</li>
-                            <li>Daily Profit: 1%</li>
-                        </ul>
-
-                        <hr> 
-
-                        <a href="#pricing" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
-
-                    </div><!--widget -->
-                </div><!-- end col -->
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3 class="stylish-header-1">Gold</h3>
-                            <h2 class="stylish-title">100%<small>60 DAY</small></h2>
-                        </div>
-                        <!-- end title -->
-                        <ul class="investment-items">
-                            <li>Min Deposit: 50 $</li>
-                            <li>Max Deposit: 600 $</li>
-                            <li>Plan Terms: 10 Days</li>
-                            <li>Total Profit: 10%</li>
-                            <li>Daily Profit: 1%</li>
-                        </ul>
-
-                        <hr> 
-
-                        <a href="#pricing" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
-
-                    </div><!--widget -->
-                </div><!-- end col -->
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3 class="stylish-header-1">Diamond</h3>
-                            <h2 class="stylish-title">240%<small>120 DAY</small></h2>
-                        </div>
-                        <!-- end title -->
-                        <ul class="investment-items">
-                            <li>Min Deposit: 50 $</li>
-                            <li>Max Deposit: 600 $</li>
-                            <li>Plan Terms: 10 Days</li>
-                            <li>Total Profit: 10%</li>
-                            <li>Daily Profit: 1%</li>
-                        </ul>
-
-                        <hr> 
-
-                        <a href="#pricing" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
-
-                    </div><!--widget -->
-                </div><!-- end col -->
-             
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
+  
     <div id="pricing" class="section lb">
         <div class="container">
             <div class="section-title text-center">
@@ -246,25 +145,14 @@
                 <p class="lead">Get the red carpet treatment <strong>just $39 per month!</strong> It is estimated that 3.5 million established by personal blogs.<br> From each other, we share paid WordPress themes WP Service...</p>
             </div><!-- end title -->
 
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="message-box">
-                        <ul class="nav nav-pills nav-stacked" id="myTabs">
-                            <li class="active"><a href="#tab1" data-toggle="pill">Monthly Subscription</a></li>
-                            <li><a href="#tab2" data-toggle="pill">Yearly Subscription</a></li>
-                        </ul>
-                    </div>
-                </div><!-- end col -->
-            </div>
-
             <hr class="invis">
 
             <div class="row">
                 <div class="col-md-12">
                     <div class="tab-content">
-                        <div class="tab-pane active fade in" id="tab1">
+                        <div class="tab-pane active fade in">
                             <div class="row text-center">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
                                             <h2>Plan 1</h2>
@@ -282,12 +170,12 @@
                                             <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
                                         </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="#contact" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
                               
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
                                             <h2>Plan 2</h2>
@@ -305,12 +193,12 @@
                                             <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
                                         </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="#contact" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
                               
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
                                             <h2>Plan 3</h2>
@@ -328,21 +216,15 @@
                                             <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
                                         </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="#contact" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
                               
-
-                            </div><!-- end row -->
-                        </div><!-- end pane -->
-
-                        <div class="tab-pane fade" id="tab2">
-                            <div class="row text-center">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
-                                            <h2>Plan 4</h2>
+                                            <h2>Plan 1</h2>
                                             <h3>10%/10 Days</h3>
                                         </div>
                                         <div class="pricing-table-space"></div>
@@ -357,57 +239,10 @@
                                             <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
                                         </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="#contact" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
-                              
-                              <div class="col-md-4">
-                                    <div class="pricing-table pricing-table-highlighted">
-                                        <div class="pricing-table-header grd1">
-                                            <h2>Plan 5</h2>
-                                            <h3>10%/10 Days</h3>
-                                        </div>
-                                        <div class="pricing-table-space"></div>
-                                        <div class="pricing-table-text">
-                                            <p>This is a perfect choice for small businesses and startups.</p>
-                                        </div>
-                                        <div class="pricing-table-features">
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>50$</strong> Min Deposit</p>
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>600$</strong> Max Deposit</p>
-                                            <p><i class="fa fa-sun-o" aria-hidden="true"></i> <strong>10Days</strong> Plan Terms</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>10%</strong> Total Profit</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
-                                        </div>
-                                        <div class="pricing-table-sign-up">
-                                            <a href="#contact" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              
-                                <div class="col-md-4">
-                                    <div class="pricing-table pricing-table-highlighted">
-                                        <div class="pricing-table-header grd1">
-                                            <h2>Plan 6</h2>
-                                            <h3>10%/10 Days</h3>
-                                        </div>
-                                        <div class="pricing-table-space"></div>
-                                        <div class="pricing-table-text">
-                                            <p>This is a perfect choice for small businesses and startups.</p>
-                                        </div>
-                                        <div class="pricing-table-features">
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>50$</strong> Min Deposit</p>
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>600$</strong> Max Deposit</p>
-                                            <p><i class="fa fa-sun-o" aria-hidden="true"></i> <strong>10Days</strong> Plan Terms</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>10%</strong> Total Profit</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
-                                        </div>
-                                        <div class="pricing-table-sign-up">
-                                            <a href="#contact" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              
 
                             </div><!-- end row -->
                         </div><!-- end pane -->
@@ -553,6 +388,95 @@
     </div><!-- end section -->
 
     
+    <div class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>Try your chance</h3>
+                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                </div>
+            </div><!-- end title -->
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="message-box">
+                                                <h4>2017 BEST WEB HOSTING COMPANY</h4>
+                        <h2>Awards Winner Support Center</h2>
+                            <style>
+                                .gamble {
+                                    text-align: center;
+                                    margin: 5rem 0;
+                                }
+
+                                    .gamble ul {
+                                        list-style: none;
+                                    }
+
+                                        .gamble ul li {
+                                            display: inline-block;
+                                            width: 5%;
+                                            margin: 0 1.5rem;
+                                            border: 1px solid;
+                                            border-width: thick;
+                                            overflow: hidden;
+                                        }
+
+                                    .gamble p {
+                                        width: 100%;
+                                        padding: 10px;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        text-align: center;
+                                        position: relative;
+                                        top: 0px;
+                                        border: none;
+                                        
+                                        margin-bottom: 0;
+                                    }
+                                .jackpot-btn {
+                                    margin: 0 auto;
+                                    display: block;
+                                    width: 20%;
+                                }
+                                video {
+                                    width: 100%;
+                                    height: auto;
+                                }
+
+                            </style>
+                        <div class="gamble">
+                            <ul>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p class="jackpot-input" jackpot="1">0</p></li>                                
+                            </ul>
+                        </div>
+
+
+                        <a onclick="playVid()" data-toggle="modal" data-target="#myModal" href="javascript:void" data-scroll="" class="jackpot-btn btn btn-light btn-radius btn-brd grd1 effect-1">Jackpot</a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="invis"> 
+
+            
+          
+
+            <hr class="hr3"> 
+
+        
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
     <div class="parallax section db parallax-off" style="background-image:url('images/section5.jpg');">
         <div class="container">
             <div class="row logos">
@@ -578,9 +502,95 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    <%--<section class="section nopad cac text-center">
+    <section class="section nopad cac text-center">
         <a href="#"><h3>Cooperating companies</h3></a>
         <p class="companies-details">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-    </section>--%>
+    </section>
 
+
+
+    <!-- The video page -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Header for video page</h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="col-6 col-s-9">
+            <video id="myVideo">
+                <source src="movies/lines2.mp4" type="video/mp4">
+                <%--<source src="mov_bbb.ogg" type="video/ogg">--%>
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+          <button id="jackpotClick" onclick="pauseVid()" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.src = "movies/lines2.mp4";
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+            vid.src = null;
+        }
+    </script>
+
+    <script>
+        var jackpot = document.getElementsByClassName("jackpot-input");
+
+        document.getElementById("jackpotClick").addEventListener("click", setRanNum);
+
+        function setRanNum() {
+
+           
+
+            //set the randome number
+            var RanVal = 0;
+            for (var i = 0; i < jackpot.length; i++) {
+                RanVal = Math.floor(Math.random() * 10)
+                //jackpot[i].setAttribute("value", RanVal);
+                jackpot[i].innerHTML = RanVal;
+            }
+
+
+            //drag them down
+            var pos = -35;
+            var id2 = setInterval(
+                function () {
+                    frameDown();
+                }, 5);
+
+            function frameDown() {
+                
+
+                    if (pos == 0) {
+                        clearInterval(id2);
+                    } else {
+                        pos++;
+                        for (var i = 0; i < jackpot.length; i++) {
+                            jackpot[i].style.top = pos + "px";
+                        }
+                    }
+            }
+        }
+
+
+    </script>
 </asp:Content>

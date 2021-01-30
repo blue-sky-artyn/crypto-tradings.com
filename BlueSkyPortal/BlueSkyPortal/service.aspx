@@ -23,7 +23,6 @@
                 <div class="grid1">
                     <span>$15/<small>month</small></span>
                     <div class="price-tit text-center">
-                        <img src="images/service/3.jpg" alt="" />
                         <h2>BASIC PLAN</h2>
                         <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet.</p>
                     </div>
