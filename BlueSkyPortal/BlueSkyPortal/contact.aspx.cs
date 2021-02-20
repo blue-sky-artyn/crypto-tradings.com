@@ -16,6 +16,11 @@ public partial class admin_contact : System.Web.UI.Page
        
     }
 
+
+
+
+  
+
     protected void btnEmail_Click(object sender, EventArgs e)
     {
 
@@ -25,7 +30,7 @@ public partial class admin_contact : System.Web.UI.Page
         int portNumber = 587;
         string userName = "bondelectric.noreply@gmail.com";
         string password = "Admin@123456";
-        string path = Server.MapPath("doc\\");
+       // string path = Server.MapPath("doc\\");
 
 
         try
@@ -39,7 +44,7 @@ public partial class admin_contact : System.Web.UI.Page
 
             smtp.Credentials = new NetworkCredential(userName, password);
             MailMessage message = new MailMessage();
-            message.To.Add("info@bondelectric.ca");
+          
             message.To.Add("i8net2000@yahoo.com");
 
 
@@ -54,7 +59,7 @@ public partial class admin_contact : System.Web.UI.Page
 
             smtp.Send(message);
 
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Email has been sent');", true);
+         //   ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Email has been sent');", true);
             //Response.Redirect("contact.aspx.aspx");
             lblErrorHtml.InnerText = "Email has been sent ";
         }

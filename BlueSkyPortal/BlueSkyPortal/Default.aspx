@@ -156,21 +156,23 @@
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
                                             <h2>Plan 1</h2>
-                                            <h3>10%/10 Days</h3>
+                                            
                                         </div>
                                         <div class="pricing-table-space"></div>
                                         <div class="pricing-table-text">
-                                            <p>This is a perfect choice for small businesses and startups.</p>
+                                            <p>
+                                                 <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                                            </p>
+
                                         </div>
                                         <div class="pricing-table-features">
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>50$</strong> Min Deposit</p>
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>600$</strong> Max Deposit</p>
-                                            <p><i class="fa fa-sun-o" aria-hidden="true"></i> <strong>10Days</strong> Plan Terms</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>10%</strong> Total Profit</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
+                                            <p>
+                                                 <asp:Literal ID="Literal2" runat="server"></asp:Literal>
+
+                                            </p>
                                         </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx?id=1" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
@@ -179,21 +181,23 @@
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
                                             <h2>Plan 2</h2>
-                                            <h3>10%/10 Days</h3>
+                                           
                                         </div>
                                         <div class="pricing-table-space"></div>
                                         <div class="pricing-table-text">
-                                            <p>This is a perfect choice for small businesses and startups.</p>
+                                            <p>
+                                                <asp:Literal ID="Literal3" runat="server"></asp:Literal>
+
+                                            </p>
                                         </div>
                                         <div class="pricing-table-features">
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>50$</strong> Min Deposit</p>
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>600$</strong> Max Deposit</p>
-                                            <p><i class="fa fa-sun-o" aria-hidden="true"></i> <strong>10Days</strong> Plan Terms</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>10%</strong> Total Profit</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
+                                           <p>
+                                                <asp:Literal ID="Literal4" runat="server"></asp:Literal>
+
+                                           </p>
                                         </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx?id=2" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
@@ -202,21 +206,19 @@
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
                                             <h2>Plan 3</h2>
-                                            <h3>10%/10 Days</h3>
+                                           
                                         </div>
                                         <div class="pricing-table-space"></div>
                                         <div class="pricing-table-text">
-                                            <p>This is a perfect choice for small businesses and startups.</p>
+                                            <p> <asp:Literal ID="Literal5" runat="server"></asp:Literal></p>
                                         </div>
                                         <div class="pricing-table-features">
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>50$</strong> Min Deposit</p>
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>600$</strong> Max Deposit</p>
-                                            <p><i class="fa fa-sun-o" aria-hidden="true"></i> <strong>10Days</strong> Plan Terms</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>10%</strong> Total Profit</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
-                                        </div>
+                                          <p>
+                                               <asp:Literal ID="Literal6" runat="server"></asp:Literal>
+
+                                          </p>     </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx?id=3" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
@@ -224,22 +226,23 @@
                                 <div class="col-md-3">
                                     <div class="pricing-table pricing-table-highlighted">
                                         <div class="pricing-table-header grd1">
-                                            <h2>Plan 1</h2>
-                                            <h3>10%/10 Days</h3>
+                                            <h2>Plan 4</h2>
+                                         
                                         </div>
                                         <div class="pricing-table-space"></div>
                                         <div class="pricing-table-text">
-                                            <p>This is a perfect choice for small businesses and startups.</p>
+                                            <p>
+                                                 <asp:Literal ID="Literal7" runat="server"></asp:Literal>
+
+                                            </p>
                                         </div>
                                         <div class="pricing-table-features">
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>50$</strong> Min Deposit</p>
-                                            <p><i class="fa fa-usd" aria-hidden="true"></i> <strong>600$</strong> Max Deposit</p>
-                                            <p><i class="fa fa-sun-o" aria-hidden="true"></i> <strong>10Days</strong> Plan Terms</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>10%</strong> Total Profit</p>
-                                            <p><i class="fa fa-percent" aria-hidden="true"></i> <strong>1%</strong> Daily Profit</p>
-                                        </div>
+                                           <p>
+                                                <asp:Literal ID="Literal8" runat="server"></asp:Literal>
+
+                                           </p>  </div>
                                         <div class="pricing-table-sign-up">
-                                            <a href="plan.aspx" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
+                                            <a href="plan.aspx?id=4" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1">Investment</a>
                                         </div>
                                     </div>
                                 </div>
@@ -268,6 +271,9 @@
                     <div class="message-box">
                                                 <h4>2017 BEST WEB HOSTING COMPANY</h4>
                         <h2>Awards Winner Support Center</h2>
+                       
+                       
+
                         <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
 
                         <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>
@@ -402,6 +408,8 @@
                     <div class="message-box">
                                                 <h4>2017 BEST WEB HOSTING COMPANY</h4>
                         <h2>Awards Winner Support Center</h2>
+                           <asp:Literal ID="Literal9" runat="server"></asp:Literal>
+                        <asp:Literal ID="Literal10" runat="server"></asp:Literal>
                             <style>
                                 .gamble {
                                     text-align: center;
@@ -446,16 +454,16 @@
                             </style>
                         <div class="gamble">
                             <ul>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>
-                                <li><p class="jackpot-input" jackpot="1">0</p></li>                                
+                                <li><p id="txt1" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt2" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt3" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt4" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt5" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt6" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt7" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt8" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt9" runat="server" class="jackpot-input" jackpot="1">0</p></li>
+                                <li><p id="txt10" runat="server" class="jackpot-input" jackpot="1">0</p></li>                                
                             </ul>
                         </div>
 
@@ -532,7 +540,10 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-          <button id="jackpotClick" onclick="pauseVid()" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <%--<button id="jackpotClick" onclick="pauseVid()" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>--%>
+
+
+          <asp:Button ID="jackpotClick" ClientIDMode="Static" runat="server" Text="Close" OnClientClick="pauseVid()" class="btn btn-danger" OnClick="jackpotClick_Click1" />
       </div>
     </div>
   </div>
@@ -553,22 +564,35 @@
     </script>
 
     <script>
+        function writeCookie(name, value, days) {
+            var date, expires;
+            if (days) {
+                date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+            } else {
+                expires = "";
+            }
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
         var jackpot = document.getElementsByClassName("jackpot-input");
 
         document.getElementById("jackpotClick").addEventListener("click", setRanNum);
 
         function setRanNum() {
 
-           
+
 
             //set the randome number
             var RanVal = 0;
+            var number = "";
             for (var i = 0; i < jackpot.length; i++) {
                 RanVal = Math.floor(Math.random() * 10)
-                //jackpot[i].setAttribute("value", RanVal);
                 jackpot[i].innerHTML = RanVal;
+                number += RanVal;
             }
-
+            writeCookie("jackpotC", number, 1);
 
             //drag them down
             var pos = -35;
@@ -578,16 +602,16 @@
                 }, 5);
 
             function frameDown() {
-                
 
-                    if (pos == 0) {
-                        clearInterval(id2);
-                    } else {
-                        pos++;
-                        for (var i = 0; i < jackpot.length; i++) {
-                            jackpot[i].style.top = pos + "px";
-                        }
+
+                if (pos == 0) {
+                    clearInterval(id2);
+                } else {
+                    pos++;
+                    for (var i = 0; i < jackpot.length; i++) {
+                        jackpot[i].style.top = pos + "px";
                     }
+                }
             }
         }
 
