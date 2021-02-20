@@ -320,7 +320,7 @@
             <div class="container">
                 <h1>Registration Form:</h1>
 
-                <form class="form">
+                </div>
                     <div class="en-style  row">
                         <div class="col-lg-12">
                             <div>
@@ -357,12 +357,12 @@
                                     </div>
                                     </div>
                                     <div class="form-group col-md-2">
-                                        <label class="sr-only" for="txtTel">Tel</label>
+                                        <label class="sr-only" for="txtTel">Valet</label>
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text">T</div>
                                         </div>
-                                        <asp:TextBox ID="txtTel" runat="server" class="input-value form-control" placeholder="4161111111" AutoCompleteType="None"></asp:TextBox>
+                                        <asp:TextBox ID="txt_valet" runat="server" class="input-value form-control" placeholder="4161111111" AutoCompleteType="None"></asp:TextBox>
 
                                     </div>
                                     </div>
@@ -396,6 +396,7 @@
                                     </div>
                                 </div>
                                 <div class="fa-style form-group">
+                                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
                                     <asp:Button ID="btnEnter" runat="server" CssClass="btnEnter" ClientIDMode="Static" Text="Enter" OnClick="btnEnter_Click" />
                                 </div>
                             </div>
