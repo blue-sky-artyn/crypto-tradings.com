@@ -70,12 +70,16 @@ form{margin: 0px;}
     
 
     /* Body */
+<<<<<<< HEAD
 .body {
     position: relative;
     margin-left: 250px;
     padding: 0px 0px 0px 20px;
     height: 800px !important;
 }    
+=======
+    .body{position: relative; margin-left: 250px; padding: 0px 0px 0px 20px;}    
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         
         /* body navigation */
         .body .navigation{padding: 10px 0px 25px; float: right; margin: 0px; list-style: none; display: block; position: relative;}

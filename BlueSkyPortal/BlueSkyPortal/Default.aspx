@@ -132,7 +132,9 @@
 		</div>
 	</div>
 	
+<<<<<<< Updated upstream
   
+<<<<<<< HEAD
 
 
     
@@ -187,6 +189,112 @@
 
 
 
+=======
+=======
+    
+    <div id="hosting" class="section wb" style="background: rgb(248, 248, 248)">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Investment plans</h3>
+                <p id="serviceTitleHtml" runat="server" class="lead">Read more about groups of <br /> <strong>Investment plans
+  </strong> can we offer you.</p>
+            </div><!-- end title -->
+
+            <div class="row dev-list text-center">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3 class="stylish-header-1">BRONZ</h3>
+                            <h2 class="stylish-title">10%<small>10 DAY</small></h2>
+                        </div>
+                        <!-- end title -->
+                        <ul class="investment-items">
+                            <li>Min Deposit: 50 $</li>
+                            <li>Max Deposit: 600 $</li>
+                            <li>Plan Terms: 10 Days</li>
+                            <li>Total Profit: 10%</li>
+                            <li>Daily Profit: 1%</li>
+                        </ul>
+
+                        <hr> 
+
+                        <a href="Palns1.aspx" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
+
+                    </div><!--widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3 class="stylish-header-1">Silver</h3>
+                            <h2 class="stylish-title">40%<small>30 DAY</small></h2>
+                        </div>
+                        <!-- end title -->
+                        <ul class="investment-items">
+                            <li>Min Deposit: 50 $</li>
+                            <li>Max Deposit: 600 $</li>
+                            <li>Plan Terms: 10 Days</li>
+                            <li>Total Profit: 10%</li>
+                            <li>Daily Profit: 1%</li>
+                        </ul>
+
+                        <hr> 
+
+                        <a href="#pricing" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
+
+                    </div><!--widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3 class="stylish-header-1">Gold</h3>
+                            <h2 class="stylish-title">100%<small>60 DAY</small></h2>
+                        </div>
+                        <!-- end title -->
+                        <ul class="investment-items">
+                            <li>Min Deposit: 50 $</li>
+                            <li>Max Deposit: 600 $</li>
+                            <li>Plan Terms: 10 Days</li>
+                            <li>Total Profit: 10%</li>
+                            <li>Daily Profit: 1%</li>
+                        </ul>
+
+                        <hr> 
+
+                        <a href="#pricing" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
+
+                    </div><!--widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3 class="stylish-header-1">Diamond</h3>
+                            <h2 class="stylish-title">240%<small>120 DAY</small></h2>
+                        </div>
+                        <!-- end title -->
+                        <ul class="investment-items">
+                            <li>Min Deposit: 50 $</li>
+                            <li>Max Deposit: 600 $</li>
+                            <li>Plan Terms: 10 Days</li>
+                            <li>Total Profit: 10%</li>
+                            <li>Daily Profit: 1%</li>
+                        </ul>
+
+                        <hr> 
+
+                        <a href="#pricing" data-scroll class="btn btn-light grd1 effect-1 btn-radius btn-brd">Investment</a>
+
+                    </div><!--widget -->
+                </div><!-- end col -->
+             
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+>>>>>>> Stashed changes
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
     <div id="pricing" class="section lb">
         <div class="container">
             <div class="section-title text-center">
@@ -308,6 +416,29 @@
 
 
 
+<<<<<<< HEAD
+=======
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div id="aboutCoHtml" runat="server" class="col-md-8 col-md-offset-2">
+                    <h3>General Trading holding</h3>
+                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                </div>
+            </div><!-- end title -->
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                                                <h4>2017 BEST WEB HOSTING COMPANY</h4>
+                        <h2>Awards Winner Support Center</h2>
+                       
+                       
+
+                        <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+
+                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
 
@@ -420,8 +551,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="message-box">
+<<<<<<< HEAD
                                                 <h4>Make a big reward by trying your chance</h4>
                         <h2>Watch the movie and<br /> win 1 million$ </h2>
+=======
+                                                <h4>2017 BEST WEB HOSTING COMPANY</h4>
+                        <h2>Awards Winner Support Center</h2>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                            <asp:Literal ID="Literal9" runat="server"></asp:Literal>
                         <asp:Literal ID="Literal10" runat="server"></asp:Literal>
                             <style>

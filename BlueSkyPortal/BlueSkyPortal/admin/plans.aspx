@@ -35,10 +35,18 @@
                                                 <th width="20%">Date</th>
                                                 <th width="80" class="TAC">Actions</th>
                                             </tr>
+<<<<<<< HEAD
                                             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
                                         
                                           
                                          
+=======
+                                        </thead>
+                                        <tbody>
+                                          
+                                         
+                                            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                           
                                             
                                         </tbody>

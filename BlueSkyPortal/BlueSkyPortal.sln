@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlueSkyPortal", "BlueSkyPortal\", "{AFEF8A08-00FC-4E5D-88C7-1E7992FB7DBA}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlueSkyPortal", "BlueSkyPor
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "62679"
+		SlnRelativePath = "BlueSkyPortal\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject

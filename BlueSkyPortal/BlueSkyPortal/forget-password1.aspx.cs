@@ -20,6 +20,7 @@ public partial class admin_login : System.Web.UI.Page
 
 
 
+<<<<<<< HEAD
 
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -153,10 +154,60 @@ public partial class admin_login : System.Web.UI.Page
         {
             Response.Redirect("~/Default.aspx");
 
+=======
+    public int send_email(string pass, string email)
+    {
+        /*
+        //*******************آرسال ایمیل تغییر پسورد
+        #region Sending Email
+
+        string smtpText = "smtp.gmail.com";
+        int portNumber = 587;
+        string userName = "bondelectric.noreply@gmail.com";
+        string password = "Admin@123456";
+        // string path = Server.MapPath("doc\\");
+
+
+        try
+        {
+
+            SmtpClient smtp = new SmtpClient(smtpText, portNumber);
+
+            smtp.EnableSsl = true;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.UseDefaultCredentials = false;
+
+            smtp.Credentials = new NetworkCredential(userName, password);
+            MailMessage message = new MailMessage();
+
+            message.To.Add(email);
+
+
+            //string toAddress = "";
+            //foreach (var item in toAddress.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries))                //Read from a string with ; as delimiter and split them and put them i an array
+
+
+
+            message.From = new MailAddress(userName);
+            message.Subject = "sbj tst";//first_name.Value + " " + last_name.Value + " (" + phone.Value + ")";
+            message.Body = "testttttttttttt";//comments.Value;
+
+            smtp.Send(message);
+
+            //   ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Email has been sent');", true);
+            //Response.Redirect("contact.aspx.aspx");
+      //      lblErrorHtml.InnerText = "Email has been sent ";
+        }
+        catch (Exception ex)
+        {
+
+        //    lblErrorHtml.InnerText = "Email has not been sent because " + ex.Message;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         }
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -180,6 +231,21 @@ public partial class admin_login : System.Web.UI.Page
         i1 = 0;
 
       
+=======
+    
+    */
+
+        return 3;
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+      
+        int i1;
+        i1 = 0;
+
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
 
@@ -216,7 +282,11 @@ public partial class admin_login : System.Web.UI.Page
                 }
                 random1 = otp;
                 //**************
+<<<<<<< HEAD
 
+=======
+           
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                 //**********************
                 //تغییر پسورد
 
@@ -224,6 +294,7 @@ public partial class admin_login : System.Web.UI.Page
                 {
 
                     ins5.update_pass_customer(txtEmail.Value, random1);
+<<<<<<< HEAD
 
                 }
 
@@ -295,6 +366,14 @@ public partial class admin_login : System.Web.UI.Page
 
 
                 //************send email**********************
+=======
+                    Response.Redirect("~/Default.aspx");
+                }
+
+
+                //************send email**********************
+             send_email(random1, txtEmail.Value);
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
             }
@@ -303,7 +382,11 @@ public partial class admin_login : System.Web.UI.Page
 
         if (i1 == 0)
         {
+<<<<<<< HEAD
             Response.Redirect("~/Default.aspx");
+=======
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
         }
 
@@ -318,7 +401,16 @@ public partial class admin_login : System.Web.UI.Page
 
 
 
+<<<<<<< HEAD
         #endregion
 
+=======
+
+
+
+
+
+        //*********************************************             
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
     }
 }

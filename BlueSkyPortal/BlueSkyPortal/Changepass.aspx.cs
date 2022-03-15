@@ -45,6 +45,7 @@ public partial class Changepass : System.Web.UI.Page
             }
         }
     }
+<<<<<<< HEAD
 
     protected void Button1_Click1(object sender, EventArgs e)
     {
@@ -81,4 +82,6 @@ public partial class Changepass : System.Web.UI.Page
         }
         Response.Redirect("default.aspx");
     }
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 }

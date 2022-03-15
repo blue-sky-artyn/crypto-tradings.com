@@ -9,7 +9,11 @@
     <!--[if gt IE 8]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
     <![endif]-->                
+<<<<<<< HEAD
     <title>404 - Aries Premium Admin Template</title>
+=======
+    <title>404 - Aries Premium Admxvxvin Template</title>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
     <link rel="icon" type="image/ico" href="favicon.ico"/>
     
     <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />

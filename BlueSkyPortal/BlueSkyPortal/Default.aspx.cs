@@ -29,6 +29,7 @@ public partial class Default2 : System.Web.UI.Page
         s6 = "";
         s7 = "";
         s8 = "";
+<<<<<<< HEAD
         string  total1;
         total1 = "";
  ///////////مشخصات  میزان کل 
@@ -42,6 +43,8 @@ public partial class Default2 : System.Web.UI.Page
                
             }
         }
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         //مشخصات پلن
 
         using (DataSetTableAdapters.PlanTableAdapter ins11 = new DataSetTableAdapters.PlanTableAdapter())
@@ -181,6 +184,7 @@ public partial class Default2 : System.Web.UI.Page
 
         }
         Response.Cookies["jackpotC"].Expires = DateTime.Now.AddDays(-1);
+<<<<<<< HEAD
 
         #region mojodi bank
 
@@ -201,6 +205,9 @@ public partial class Default2 : System.Web.UI.Page
         #endregion
 
 
+=======
+        
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
     }
 
     protected void btnSubscriber_Click(object sender, EventArgs e)

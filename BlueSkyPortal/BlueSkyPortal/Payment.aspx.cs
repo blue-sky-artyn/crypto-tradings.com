@@ -22,6 +22,7 @@ public partial class admin_service : System.Web.UI.Page
     string valet_moaref;
     string id_plan;
     string vam;
+<<<<<<< HEAD
 
     string darsadsod_moaref;
     int planasli;
@@ -30,6 +31,14 @@ public partial class admin_service : System.Web.UI.Page
     protected SqlCommand command;
     protected SqlDataReader dataReader;
 
+=======
+    string darsadsod_moaref;
+    int planasli;
+    protected SqlConnection Connection;
+    protected SqlCommand command;
+    protected SqlDataReader dataReader;
+    
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
     public string Decrypt(string cipherText)
@@ -67,7 +76,11 @@ public partial class admin_service : System.Web.UI.Page
 
         if (Request.Cookies["Logincustomer"] == null)
         {
+<<<<<<< HEAD
             Response.Redirect("~/login-f.aspx");
+=======
+            Response.Redirect("~/Default.aspx");
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         }
 
 
@@ -83,6 +96,7 @@ public partial class admin_service : System.Web.UI.Page
             DateTime localDate = DateTime.Now;
             string date1;
             date1 = Convert.ToString(localDate);
+<<<<<<< HEAD
 
             date1 = localDate.ToString("yyyy/MM/dd");
 
@@ -96,6 +110,13 @@ public partial class admin_service : System.Web.UI.Page
 
                 id_customer = Convert.ToString(Session["id_customer"]);
             //  id_customer = "1";
+=======
+            date1 = date1.Remove(10, 9);
+
+
+            id_customer = Convert.ToString(Session["id_customer"]);
+          //  id_customer = "1";
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             //  جستجو مشتری
 
 
@@ -133,6 +154,7 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+<<<<<<< HEAD
             //      using (DataSetTableAdapters.Sub_plansTableAdapter ins1 = new DataSetTableAdapters.Sub_plansTableAdapter())
             //      {
             //          DataSet.Sub_plansDataTable ne1 = ins1.search_plan_id(Convert.ToInt32(id_plan));
@@ -170,14 +192,30 @@ public partial class admin_service : System.Web.UI.Page
                     planasli = row1.Id_paln;
                     id_subplans1 = row1.Id_subplan;
 
+=======
+            using (DataSetTableAdapters.Sub_plansTableAdapter ins1 = new DataSetTableAdapters.Sub_plansTableAdapter())
+            {
+                DataSet.Sub_plansDataTable ne1 = ins1.search_plan_id(Convert.ToInt32(id_plan));
+                foreach (DataSet.Sub_plansRow row3 in ne1)
+                {
+
+                    Txt_nameplan.Text = row3.Name_plan;
+                    Txt_valetcompani.Text = row3.Adress_valet;
+                    Txt_date.Text = date1;
+                    darsadsod_moaref = row3.Moaref_darsad;
+                    planasli =  row3.Id_paln;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
                 }
 
             }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         }
 
 
@@ -185,8 +223,13 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+<<<<<<< HEAD
         //تولیدqr
         string code = Txt_valetcompani.Text;
+=======
+                    //تولیدqr
+                    string code = Txt_valetcompani.Text;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         QRCodeGenerator qrGenerator = new QRCodeGenerator();
         QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q);
         System.Web.UI.WebControls.Image imgBarCode = new System.Web.UI.WebControls.Image();
@@ -200,16 +243,27 @@ public partial class admin_service : System.Web.UI.Page
                 byte[] byteImage = ms.ToArray();
                 imgBarCode.ImageUrl = "data:image/png;base64," + Convert.ToBase64String(byteImage);
             }
+<<<<<<< HEAD
 
             plBarCode.Controls.Add(imgBarCode);
 
         }
-
-
-
-
-
+=======
+            
+            plBarCode.Controls.Add(imgBarCode);
+       
     }
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
+
+
+
+
+
+<<<<<<< HEAD
+    }
+=======
+}
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
 
@@ -217,8 +271,13 @@ public partial class admin_service : System.Web.UI.Page
 
     protected void btnGenerate_Click(object sender, EventArgs e)
     {
+<<<<<<< HEAD
 
         string code = "jbkjjhhjh";
+=======
+        
+        string code ="jbkjjhhjh";
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         QRCodeGenerator qrGenerator = new QRCodeGenerator();
         QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q);
         System.Web.UI.WebControls.Image imgBarCode = new System.Web.UI.WebControls.Image();
@@ -232,14 +291,22 @@ public partial class admin_service : System.Web.UI.Page
                 byte[] byteImage = ms.ToArray();
                 imgBarCode.ImageUrl = "data:image/png;base64," + Convert.ToBase64String(byteImage);
             }
+<<<<<<< HEAD
             plBarCode.Controls.Add(imgBarCode);
+=======
+           plBarCode.Controls.Add(imgBarCode);
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         }
     }
 
 
 
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
 
@@ -249,9 +316,13 @@ public partial class admin_service : System.Web.UI.Page
 
     protected void btnEmail_Click(object sender, EventArgs e)
     {
+<<<<<<< HEAD
         string d9;
         DateTime localDate9 = DateTime.Now;
         d9 = localDate9.ToString("yyyy/MM/dd");
+=======
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
         //ارسال ایمیل
         string body;
@@ -271,6 +342,7 @@ public partial class admin_service : System.Web.UI.Page
 
         //*********
 
+<<<<<<< HEAD
         //////////searhccash
         if (Txt_tefrence.Text == "")
         {
@@ -541,6 +613,10 @@ public partial class admin_service : System.Web.UI.Page
 
             }
 
+=======
+
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
 
@@ -548,6 +624,7 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -660,11 +737,87 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+=======
+        /*
+
+
+ //  جستجو پلن 1 باشد
+         if (planasli == 1)
+         {
+
+
+             //   DateTime localDate = DateTime.Now;
+             //   string date;
+             int roz_seporde;
+             roz_seporde = 0;
+             Double darsad_subplan;
+             darsad_subplan = 0;
+             string darsad_moaref;
+             string min_subplan;
+             min_subplan = "";
+             string max_subplan;
+             max_subplan = "";
+
+
+             Double darsad;
+             Double darsad_roz;
+             Double sum;
+
+             int i;
+             int tedad_roz;
+
+
+             //مشخصات پلن
+
+             using (DataSetTableAdapters.Sub_plansTableAdapter ins11 = new DataSetTableAdapters.Sub_plansTableAdapter())
+             {
+                 DataSet.Sub_plansDataTable ne11 = ins11.Search_subplanid(Convert.ToInt32(id_plan));
+                 foreach (DataSet.Sub_plansRow row1 in ne11)
+                 {
+                     roz_seporde = row1.Period;
+                     darsad_subplan = Convert.ToDouble(row1.Darsad);
+                     darsad_moaref = row1.Moaref_darsad;
+                     min_subplan = row1.Min_price;
+                     max_subplan = row1.Max_price;
+                     vam = row1.Debit;
 
 
 
 
 
+                 }
+
+             }
+             //اعتبار سنجی ها
+
+
+             //مبلغ کمتر از حد پلن نباشه
+
+             if ((Convert.ToInt32(Txt_Price.Text)) < (Convert.ToInt32(min_subplan)))
+             {
+
+
+
+             }
+
+
+
+             //************
+             //مبلغ بیشتر از حد پلن نباشه
+
+             if ((Convert.ToInt32(Txt_Price.Text)) > (Convert.ToInt32(max_subplan)))
+             {
+
+
+
+             }
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
+
+
+
+
+
+<<<<<<< HEAD
             //************
             //ذخیره سطح3
 
@@ -958,11 +1111,224 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+=======
+
+             //**************************
+             //***************
+             // مشخصات مشتری
+
+             //***************
+             //جستجو در سایت جهت تایید تراکنش
+
+
+             //**********************
+             DateTime localDate1 = DateTime.Now;
+             string date1;
+             int Max_cash;
+             Max_cash = 0;
+             //*************cash*ذخیره کش
+             using (DataSetTableAdapters.CashTableAdapter ins1 = new DataSetTableAdapters.CashTableAdapter())
+             {
+
+                 ins1.Insert(Convert.ToInt32(id_customer), Txt_Price.Text, "0", Convert.ToString(localDate1), Txt_valetcompani.Text, "", 0, "", "");
+                 //   Response.Redirect("~/Admin/Insert_mp3.aspx");
+             }
+
+             //*******************Max cash
+
+             Connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["CryptoConnectionString"].ConnectionString);
+             command = new SqlCommand();
+             command.Connection = Connection;
+             Connection.Open();
+
+             command.CommandText = "Max_factore";
+             command.CommandType = System.Data.CommandType.StoredProcedure;
+             if (dataReader.Read())
+             {
+                 Max_cash = Convert.ToInt32(dataReader["Code_cash"].ToString());
+
+             }
 
 
 
 
 
+             //******************محاسبه سود معرف
+             Double sum_moaref;
+             sum_moaref = Convert.ToInt32(Txt_Price.Text) * (Convert.ToInt32(darsadsod_moaref) / 100);
+
+
+             //************************
+
+
+
+
+             //*************************
+             //ذخیره فاکتور
+             //*****************
+             darsad_roz = ((Convert.ToInt32(Txt_Price.Text) * (darsad_subplan / 100)) / roz_seporde);
+             for (i = 0; i <= roz_seporde; i++)
+             {
+                 sum = (Convert.ToInt32(Txt_Price.Text) + (darsad_roz * i));
+                 localDate1 = localDate1.AddDays(1);
+                 date1 = localDate1.ToString("yyyy/MM/dd");
+
+                 //ذخیره فاکتور
+                 using (DataSetTableAdapters.FactoreTableAdapter ins1 = new DataSetTableAdapters.FactoreTableAdapter())
+                 {
+
+                     ins1.Insert(Convert.ToInt32(id_plan), Convert.ToInt32(id_customer), Txt_date.Text, Txt_Price.Text, vam, Convert.ToString(sum), date1, Convert.ToString(darsad_subplan),
+                         Txt_valetcustomer.Text, valet_moaref, Convert.ToInt32(id_customer_moaref), Convert.ToString(sum_moaref), 0, 0, "", "", "", Max_cash);
+                     //   Response.Redirect("~/Admin/Insert_mp3.aspx");
+                 }
+
+
+
+
+             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             //***********
+             //واریز به حساب معرف
+
+             //************
+         }
+
+ //**************انتهای پلن1
+         //****************
+
+  if (planasli == 2 )
+         {
+
+             if (planasli == 1)
+             {
+
+
+                 //   DateTime localDate = DateTime.Now;
+                 //   string date;
+                 int roz_seporde;
+                 roz_seporde = 0;
+                 Double darsad_subplan;
+                 darsad_subplan = 0;
+                 string darsad_moaref;
+                 string min_subplan;
+                 min_subplan = "";
+                 string max_subplan;
+                 max_subplan = "";
+
+
+                 Double darsad;
+                 Double darsad_roz;
+                 Double sum;
+
+                 int i;
+                 int tedad_roz;
+
+
+                 //مشخصات پلن
+
+                 using (DataSetTableAdapters.Sub_plansTableAdapter ins11 = new DataSetTableAdapters.Sub_plansTableAdapter())
+                 {
+                     DataSet.Sub_plansDataTable ne11 = ins11.Search_subplanid(Convert.ToInt32(id_plan));
+                     foreach (DataSet.Sub_plansRow row1 in ne11)
+                     {
+                         roz_seporde = row1.Period;
+                         darsad_subplan = Convert.ToDouble(row1.Darsad);
+                         darsad_moaref = row1.Moaref_darsad;
+                         min_subplan = row1.Min_price;
+                         max_subplan = row1.Max_price;
+                         vam = row1.Debit;
+
+
+
+
+
+                     }
+
+                 }
+                 //اعتبار سنجی ها
+
+
+                 //مبلغ کمتر از حد پلن نباشه
+
+                 if ((Convert.ToInt32(Txt_Price.Text)) < (Convert.ToInt32(min_subplan)))
+                 {
+
+
+
+                 }
+
+
+
+                 //************
+                 //مبلغ بیشتر از حد پلن نباشه
+
+                 if ((Convert.ToInt32(Txt_Price.Text)) > (Convert.ToInt32(max_subplan)))
+                 {
+
+
+
+                 }
+
+
+
+
+
+
+                 //**************************
+                 //***************
+                 // مشخصات مشتری
+
+                 //***************
+                 //جستجو در سایت جهت تایید تراکنش
+
+
+                 //**********************
+                 DateTime localDate1 = DateTime.Now;
+                 string date1;
+                 int Max_cash;
+                 Max_cash = 0;
+                 //*************cash*ذخیره کش
+                 using (DataSetTableAdapters.CashTableAdapter ins1 = new DataSetTableAdapters.CashTableAdapter())
+                 {
+
+                     ins1.Insert(Convert.ToInt32(id_customer), Txt_Price.Text, "0", Convert.ToString(localDate1), Txt_valetcompani.Text, "", 0, "", "");
+                     //   Response.Redirect("~/Admin/Insert_mp3.aspx");
+                 }
+
+                 //*******************Max cash
+
+                 Connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["CryptoConnectionString"].ConnectionString);
+                 command = new SqlCommand();
+                 command.Connection = Connection;
+                 Connection.Open();
+
+                 command.CommandText = "Max_factore";
+                 command.CommandType = System.Data.CommandType.StoredProcedure;
+                 if (dataReader.Read())
+                 {
+                     Max_cash = Convert.ToInt32(dataReader["Code_cash"].ToString());
+
+                 }
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
+
+
+
+
+
+<<<<<<< HEAD
             //***********
             //واریز به حساب معرف
             int id_referal1;
@@ -1067,12 +1433,67 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+=======
+                 //******************محاسبه سود معرف
+                 Double sum_moaref;
+                 sum_moaref = Convert.ToInt32(Txt_Price.Text) * (Convert.ToInt32(darsadsod_moaref) / 100);
+
+
+                 //************************
+
+
+
+
+                 //*************************
+                 //ذخیره فاکتور
+                 //*****************
+                 darsad_roz = ((Convert.ToInt32(Txt_Price.Text) * (darsad_subplan / 100)) / roz_seporde);
+                 for (i = 0; i <= roz_seporde; i++)
+                 {
+                     sum = (Convert.ToInt32(Txt_Price.Text) + (darsad_roz * i));
+                     localDate1 = localDate1.AddDays(1);
+                     date1 = localDate1.ToString("yyyy/MM/dd");
+
+                     //ذخیره فاکتور
+                     using (DataSetTableAdapters.FactoreTableAdapter ins1 = new DataSetTableAdapters.FactoreTableAdapter())
+                     {
+
+                         ins1.Insert(Convert.ToInt32(id_plan), Convert.ToInt32(id_customer), Txt_date.Text, Txt_Price.Text, vam, Convert.ToString(sum), date1, Convert.ToString(darsad_subplan),
+                             Txt_valetcustomer.Text, valet_moaref, Convert.ToInt32(id_customer_moaref), Convert.ToString(sum_moaref), 0, 0, "", "", "", Max_cash);
+                         //   Response.Redirect("~/Admin/Insert_mp3.aspx");
+                     }
+
+
+
+
+                 }
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+                 //***********
+                 //واریز به حساب معرف
+
+                 //************
+             }
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
+
+
+
+
+
+
+<<<<<<< HEAD
             //************
             //ذخیره سطح3
 
@@ -1894,12 +2315,56 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+=======
+
+         }
+
+  //********انتهای پلن2
+
+         if(planasli == 3)
+
+         {
+
+
+
+
+
+
+
+         }
+
+         //انتهای پلن3
+         if (planasli == 4)
+
+         {
+
+
+
+         }
+
+         //انتهای پلن4
+
+     */
+        #region Sending Email
+
+        string smtpText = "smtp.gmail.com";
+        int portNumber = 587;
+        string userName = "cryptotrading3535@gmail.com";
+        string password = "trading3535";
+        // string path = Server.MapPath("doc\\");
+
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         try
         {
 
             SmtpClient smtp = new SmtpClient(smtpText, portNumber);
 
+<<<<<<< HEAD
             smtp.EnableSsl = false;
+=======
+            smtp.EnableSsl = true;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
 
@@ -1915,9 +2380,14 @@ public partial class admin_service : System.Web.UI.Page
 
 
             message.From = new MailAddress(userName);
+<<<<<<< HEAD
             message.Subject = sub;//first_name.Value + " " + last_name.Value + " (" + phone.Value + ")";
             message.IsBodyHtml = true;
             message.Body = body;//comments.Value;
+=======
+            message.Subject = "payment";//first_name.Value + " " + last_name.Value + " (" + phone.Value + ")";
+            message.Body = "testttttttttttt";//comments.Value;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
             smtp.Send(message);
 

@@ -4,6 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
+<<<<<<< HEAD
       <div class="content">
                 
                 <div class="page-header">
@@ -64,6 +65,49 @@
                 </div>                
                      
             </div>
+=======
+    <asp:Label ID="Label1" runat="server" Text="sub_emailregister"></asp:Label>
+    <asp:TextBox ID="txt_subregister" runat="server"></asp:TextBox>
+
+    <br />
+
+     <asp:Label ID="Label2" runat="server" Text="body_emailregister"></asp:Label>
+    <asp:TextBox ID="txt_bodyregister" runat="server"></asp:TextBox>
+
+    <br />
+
+
+
+ <asp:Label ID="Label3" runat="server" Text="sub_emailpayment"></asp:Label>
+    <asp:TextBox ID="txt_subprice" runat="server"></asp:TextBox>
+
+    <br />
+
+
+
+ <asp:Label ID="Label4" runat="server" Text="body_emailpayment"></asp:Label>
+    <asp:TextBox ID="txt_bodyprice" runat="server"></asp:TextBox>
+
+    <br />
+
+
+    <asp:Label ID="Label5" runat="server" Text="valetLottery"></asp:Label>
+    <asp:TextBox ID="txt_Lottery" runat="server"></asp:TextBox>
+
+    <br />
+    <asp:Button ID="Button1" runat="server" Text="update" OnClick="Button1_Click" />
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 </asp:Content>
 

@@ -12,7 +12,11 @@
     <%--<link rel="stylesheet/less" type="text/css" href="css/style.less" />--%>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/responsive1.css" />
+=======
+    <link rel="stylesheet" href="css/responsive.css" />
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
     <style>
         @font-face {
             font-family: 'Source Sans Pro';
@@ -160,9 +164,15 @@
             padding: 10px 15px;
             color: #53e3a6;
             border-radius: 3px;
+<<<<<<< HEAD
             width: 12%;
             cursor: pointer;
             font-size: 15px;
+=======
+            width: 250px;
+            cursor: pointer;
+            font-size: 18px;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             transition-duration: 0.25s;
         }
 
@@ -294,6 +304,10 @@
         .avatar {
             overflow: hidden;
             width: 85%;
+<<<<<<< HEAD
+=======
+            border-radius: 50%;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             margin: 15px 8%;
             max-height: 250px;
         }
@@ -393,6 +407,7 @@
             <div class="container">
                 <h1>User Profile:</h1>
 
+<<<<<<< HEAD
                 <div class="form">
                     <div class="en-style  row">
                         <div class="col-lg-12">
@@ -455,11 +470,53 @@
                             
                              
                                 <div class="col-lg-12 col-sm-12">
+=======
+
+
+
+
+
+
+
+
+
+
+
+                <div class="form">
+                    <div class="en-style  row">
+                        <div class="col-lg-12">
+
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+
+
+                                    <h2>Your Plan</h2>
+
+                                    <div id="planHtml" runat="server" class="card-deck">
+                                        <div id="1" title="Plan 1" class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                            </div>
+                                        </div>
+                                   
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-5">
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                     <h2>Membership card</h2>
                                     <div class="card hovercard">
                                         <div class="cardheader">
                                         </div>
                                         <div class="avatar">
+<<<<<<< HEAD
                                             <img id="userPicHtml" runat="server" alt="Ticc member" src="~/images/logos/logo.png" />
                                         </div>
                                         <div class="info">
@@ -478,12 +535,28 @@
                                                 <p id="userEmailHtml" runat="server">
                                                     <asp:Literal ID="Literal3_email" runat="server"></asp:Literal>
                                                 </p>
+=======
+                                            <img id="userPicHtml" runat="server" alt="Ticc member" src="~/images/avatar.png" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="title">
+                                                <h3 id="memberIdHtml" runat="server" class="title-card">CT-1234</h3>
+                                            </div>
+                                            <div class="desc-card">
+                                                <p id="userNameHtml" runat="server">Farhad Taheri</p>
+                                                <p id="userPlanHtml" runat="server">Member of Golden Plan</p>
+                                                <p id="userEmailHtml" runat="server">Email:admin1@admin.com</p>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
                                             </div>
 
                                         </div>
                                         <div class="bottom">
+<<<<<<< HEAD
                                             
+=======
+                                            <asp:FileUpload ID="fuGallery" runat="server" CssClass="btnEnter" ToolTip="profile picture uploud" />
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                             <p id="lblError" runat="server"></p>
 
                                         </div>
@@ -494,6 +567,7 @@
 
 
                             </div>
+<<<<<<< HEAD
                                 </div>
                                 
                             </div>
@@ -514,6 +588,86 @@
                         </div>
                           </div>
                        
+=======
+                            <div class="form-row">
+                                <div class="form-group col-md-2">
+                                    <label class="mr-sm-2" for="ddlSex">Title</label>
+                                    <asp:DropDownList ID="ddlSex" runat="server" CssClass="custom-select mr-sm-2">
+                                        <asp:ListItem Text="Optional..." Value="Optional..." Selected="True" />
+                                        <asp:ListItem Text="Male" Value="Male" />
+                                        <asp:ListItem Text="Female" Value="Female" />
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="txtName">Name</label>
+                                    <asp:TextBox ID="txtName" runat="server" class="input-value form-control" placeholder="Name" AutoCompleteType="None"></asp:TextBox>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="txtFamily">Family</label>
+                                    <asp:TextBox ID="txtFamily" runat="server" class="input-value form-control" placeholder="Family" AutoCompleteType="None"></asp:TextBox>
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="col-md-4">
+                                    <label class="sr-only" for="txtEmail">Email</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">@</div>
+                                        </div>
+                                        <input type="email" name="name" value="" ID="txtEmail" runat="server" class="input-value form-control" placeholder="Email" AutoCompleteType="None"
+                                            pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" required />
+                                        <%--<asp:TextBox ID="txtEmail" runat="server" class="input-value form-control" placeholder="Email" AutoCompleteType="None"></asp:TextBox>--%>
+
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label class="sr-only" for="txtTel">Tel</label>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">T</div>
+                                        </div>
+                                        <asp:TextBox ID="txtTel" runat="server" class="input-value form-control" placeholder="4161111111" AutoCompleteType="None"></asp:TextBox>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+
+
+                                <p>The date of registration is <span id="userStartDateHtml" runat="server" class="e-transfer-detail">2020/01/05 </span> and your membership will expire in <span id="userEndDateHtml" runat="server" class="e-transfer-detail">2020/01/05 </span>.</p>
+
+
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="txtPass1">Password</label>
+                                <asp:TextBox ID="txtPass1" runat="server" class="input-value form-control" placeholder="Enter Password" AutoCompleteType="None" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox ID="txtPass2" runat="server" class="input-value form-control" placeholder="Renter Password" AutoCompleteType="None" TextMode="Password"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtAddr">Address</label>
+                                <asp:TextBox ID="txtAddr" runat="server" class="input-value form-control" placeholder="1234 Main St" AutoCompleteType="None"></asp:TextBox>
+                            </div>
+
+                            <%--<div class="form-group">
+                                    <label for="txtDetails">Details</label>
+                                    <asp:TextBox ID="txtDetails" runat="server" class="input-value form-control" placeholder="Enter any extera details" TextMode="MultiLine" AutoCompleteType="None"></asp:TextBox>
+                                </div>--%>
+
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <p id="txtError" runat="server" class="error-msg mfp-s-error" visible="false" nbforecolor="#FF3300">Please enter required Values...</p>
+                                </div>
+                            </div>
+                            <div class="fa-style form-group">
+                                <input type="button" name="name" class="btnEnter" value="Reurn" onclick="window.location.href = '/default.aspx'" />
+                                <asp:Button ID="btnEnter" runat="server" CssClass="btnEnter" ClientIDMode="Static" Text="Update" OnClick="btnEnter_Click" />
+                                
+                            </div>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+<<<<<<< HEAD
 using System.Net;
 using System.Net.Mail;
 
@@ -89,10 +90,19 @@ public partial class dashboard_login : System.Web.UI.Page
 
 
 
+=======
+
+public partial class dashboard_login : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string email = txtEmail.Value;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
     }
 
     protected void btnEnter_Click(object sender, EventArgs e)
     {
+<<<<<<< HEAD
         if(txtAddr.Text != "")
         {
             //*************cash*ذخیره کش
@@ -171,6 +181,8 @@ public partial class dashboard_login : System.Web.UI.Page
         //  Response.Cookies.Clear();
 
 
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
     }
 }

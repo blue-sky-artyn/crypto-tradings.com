@@ -124,7 +124,10 @@ public partial class admin_service : System.Web.UI.Page
             string id_plan1 = Request.QueryString["id"];
             string id_plan = id_plan1;
             string s1;
+<<<<<<< HEAD
             int counterRow = 1;
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             s1 = "";
             using (DataSetTableAdapters.Sub_plansTableAdapter ins1 = new DataSetTableAdapters.Sub_plansTableAdapter())
             {
@@ -136,6 +139,7 @@ public partial class admin_service : System.Web.UI.Page
                   //  s1 += "<span>%"+row3.Min_price+ "/<small>Minimum amount</small></span>";
                     s1 += " <div class='price-tit text-center'>";
                     s1 += "<h2>"+row3.Name_plan+"</h2>";
+<<<<<<< HEAD
                     s1 += " <p>Introducing this plan for you</p>";
                     s1 += "</div>";
                     s1 += "<div class='para'>";
@@ -166,6 +170,19 @@ public partial class admin_service : System.Web.UI.Page
                     s1 += "</div>";
                     s1 += "<div class='sign text-center pricing-table-sign-up'>";
                     s1 += "<a href ='Payment.aspx?id=" + encrypt(Convert.ToString(row3.Id_subplan)) + " 'class='btn btn-light btn-radius btn-brd grd1 effect-1'>BUY</a>";
+=======
+                    s1 += " <p>"+row3.Desc_subplan+"</p>";
+                    s1 += "</div>";
+                    s1 += "<div class='para'>";
+                    s1 += "<p>Minimum amount:" + row3.Min_price+"</p>";
+                    s1 += "<p>Maximum amount:"+row3.Max_price+"</p>";
+                    s1 += "<p>Day:"+row3.Period+"</p>";
+                    s1 += "<p>Percent:"+row3.Darsad+"</p>";
+                    s1 += "<p>debt:" + row3.Debit + "</p>";
+                    s1 += "</div>";
+                    s1 += "<div class='sign text-center pricing-table-sign-up'>";
+                    s1 += "<a href ='Payment.aspx?id=" + encrypt(id_plan1) + " 'class='btn btn-light btn-radius btn-brd grd1 effect-1'>BUY</a>";
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
              
 
@@ -175,12 +192,16 @@ public partial class admin_service : System.Web.UI.Page
                     s1 += "</div>";
                     s1 += "</div>";
                     s1 += "</div>";
+<<<<<<< HEAD
                     if (counterRow == 3)
                     {
                         s1 += "<div class='space-between'></div>";
                         counterRow = 1;
                     }
                     counterRow++;
+=======
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
                 }
                 Literal1.Text = s1;

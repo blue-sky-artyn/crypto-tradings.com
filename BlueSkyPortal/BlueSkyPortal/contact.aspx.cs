@@ -27,8 +27,16 @@ public partial class admin_contact : System.Web.UI.Page
 
         #region Sending Email
 
+<<<<<<< HEAD
         string smtpText = "relay-hosting.secureserver.net";
         int portNumber = 25;
+=======
+        string smtpText = "smtp.gmail.com";
+        int portNumber = 587;
+        string userName = "bondelectric.noreply@gmail.com";
+        string password = "Admin@123456";
+       // string path = Server.MapPath("doc\\");
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
         string userName = "crypto.tradings.official@gmail.com";
         string password = "Crypto2020";
@@ -47,7 +55,10 @@ public partial class admin_contact : System.Web.UI.Page
             smtp.Credentials = new NetworkCredential(userName, password);
             MailMessage message = new MailMessage();
           
+<<<<<<< HEAD
             message.To.Add("crypto.tradings.noreply@gmail.com");
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             message.To.Add("i8net2000@yahoo.com");
 
             //string toAddress = "";
@@ -62,7 +73,11 @@ public partial class admin_contact : System.Web.UI.Page
 
             smtp.Send(message);
 
+<<<<<<< HEAD
             //ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Email has been sent');", true);
+=======
+         //   ScriptManager.RegisterStartupScript(this, this.GetType(), "popup", "alert('Email has been sent');", true);
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             //Response.Redirect("contact.aspx.aspx");
             lblErrorHtml.InnerText = "Email has been sent ";
         }

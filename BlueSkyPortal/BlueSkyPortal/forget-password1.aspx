@@ -65,6 +65,10 @@
 
                      <p id="lblErrorHtml" runat="server" style="color: red;"></p>
               
+<<<<<<< HEAD
+=======
+                                   
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                     
                                     
                 </div>
@@ -73,9 +77,14 @@
             
             <div class="row-form">
                 <div class="span12">
+<<<<<<< HEAD
                     <asp:Button ID="Button1" runat="server" CssClass="btn" Text="Submit" OnClick="Button1_Click1" />
 
                     <%--<button >Send request<span class="icon-arrow-next icon-white"></span></button>--%>
+=======
+
+                    <button class="btn">Send request<span class="icon-arrow-next icon-white"></span></button>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                 </div>                
             </div>
         </div>

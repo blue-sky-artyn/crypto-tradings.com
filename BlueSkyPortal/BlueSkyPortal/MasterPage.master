@@ -282,9 +282,15 @@
                     <div class="modal-body customer-box row">
                         <div class="col-md-12">
                             <!-- Nav tabs -->
+<<<<<<< HEAD
 
                             <ul class="nav nav-tabs">
 
+=======
+                            
+                            <ul class="nav nav-tabs">
+                               
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                 <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
                                 <li><a href="#Registration" data-toggle="tab">Registration</a></li>
                             </ul>
@@ -294,17 +300,25 @@
                                     <div role="form" class="form-horizontal">
                                         <div class="form-group">
                                             <div class="col-sm-12">
+<<<<<<< HEAD
 
 
 
 
 
                                                 <asp:TextBox ID="txtUsername1" runat="server" class="form-control" placeholder="Email address" name="txtUsername1"></asp:TextBox>
+=======
+                                                <asp:TextBox ID="txtUsername1" runat="server" class="form-control" placeholder="Username"  name="txtUsername1" required></asp:TextBox>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-12">
+<<<<<<< HEAD
                                                 <asp:TextBox ID="txtPass1" runat="server" class="form-control" placeholder="Password" TextMode="Password" name="txtPass1" type="password"></asp:TextBox>
+=======
+                                                <asp:TextBox ID="txtPass1"  runat="server" class="form-control" placeholder="Password" TextMode="Password"  name="txtPass1"  type="password"  required></asp:TextBox>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -318,7 +332,10 @@
                                                     Submit
 								
                                                 </button>
+<<<<<<< HEAD
 
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                                 <a class="for-pwd" href="forget-password1.aspx">Forgot your password?</a>
                                             </div>
                                         </div>
@@ -328,6 +345,7 @@
                                     <div role="form" class="form-horizontal">
                                         <div class="form-group">
                                             <div class="col-sm-12">
+<<<<<<< HEAD
                                                 <asp:TextBox ID="Txt_Name" runat="server" class="form-control" placeholder="Name"></asp:TextBox>
 
                                             </div>
@@ -356,16 +374,53 @@
                                             <div class="col-sm-12">(optinal) 
                                                 <asp:TextBox ID="Txt_valetmo" runat="server" class="form-control" placeholder="Referal"></asp:TextBox>
 
+=======
+                                                <asp:TextBox ID="Txt_Name" runat="server" class="form-control" placeholder="Name" ></asp:TextBox>
+                                               
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-12">
+                                                <asp:TextBox ID="Txt_email" runat="server" class="form-control" placeholder="Email"  ></asp:TextBox>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                      <asp:TextBox ID="Txt_valet" runat="server" class="form-control" placeholder="valet" ></asp:TextBox>
+                                               
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+<<<<<<< HEAD
                                                 <p id="lblError" runat="server"></p>
+=======
+                                                <asp:TextBox ID="Txt_pass" runat="server" class="form-control"  type="password" placeholder="Password" name="Txt_pass" ></asp:TextBox>
+                                              
+                                            </div>
+                                        </div>
+
+                                         <div class="form-group">
+                                            <div class="col-sm-12">
+                                                      <asp:TextBox ID="Txt_valetmo" runat="server" class="form-control" placeholder="Referal"  ></asp:TextBox>
+                                               
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-10">
+<<<<<<< HEAD
                                                 <asp:Button ID="Button1" runat="server" OnClick="Button1_OnClick" Text=" Save & Continue" class="btn btn-light btn-radius btn-brd grd1" />
+=======
+                                                <asp:Button ID="Button1" runat="server" OnClick="Button1_OnClick"  Text=" Save & Continue" class="btn btn-light btn-radius btn-brd grd1" />
+                                            <!--    <button type="button"  class="btn btn-light btn-radius btn-brd grd1">
+                                                    Save &amp; Continue</button> -->
+                                              
+
+                                           
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                                                 <button type="button" class="btn btn-light btn-radius btn-brd grd1">
                                                     Cancel</button>
                                             </div>
@@ -467,7 +522,11 @@
                             <li><a href="contact.aspx">Contact</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
                             <li><a id="userProfile" runat="server" href="#" CssClass="user-text">Guest</a></li>
+=======
+                             <asp:Label ID="Label1" runat="server" Text="Guest"></asp:Label>
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                             <li><a class="btn-light btn-radius btn-brd log" href="#" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
                         </ul>
                     </div>

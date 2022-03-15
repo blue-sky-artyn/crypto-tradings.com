@@ -78,11 +78,18 @@ public partial class admin_service : System.Web.UI.Page
         valet_Lottery = "";
         using (DataSetTableAdapters.email_registerTableAdapter pass19 = new DataSetTableAdapters.email_registerTableAdapter())
         {
+<<<<<<< HEAD
             DataSet.email_registerDataTable mess19 = pass19.select_email1   ();
             foreach (DataSet.email_registerRow date219 in mess19)
             {
                 valet_Lottery = date219.Desk_emilregister1;
                 Txt_Price.Text = "10";
+=======
+            DataSet.email_registerDataTable mess19 = pass19.Search_email1();
+            foreach (DataSet.email_registerRow date219 in mess19)
+            {
+                valet_Lottery = date219.Desk_emilregister;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
             }
         }
@@ -101,7 +108,11 @@ public partial class admin_service : System.Web.UI.Page
         Txt_nameplan.Text = "Lottery";
                     Txt_valetcompani.Text = valet_Lottery;
                     Txt_date.Text = date1;
+<<<<<<< HEAD
        
+=======
+        Txt_Price.Text = "10";
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
                   
                  
 
@@ -166,7 +177,11 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
 
 
@@ -183,6 +198,7 @@ public partial class admin_service : System.Web.UI.Page
         string sub;
         body = "";
         sub = "";
+<<<<<<< HEAD
 
         //////////searhccash
         if (Txt_tefrence.Text == "")
@@ -279,6 +295,8 @@ public partial class admin_service : System.Web.UI.Page
 
 
 
+=======
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         using (DataSetTableAdapters.email_registerTableAdapter pass12 = new DataSetTableAdapters.email_registerTableAdapter())
         {
             DataSet.email_registerDataTable mess12 = pass12.Search_email1();
@@ -304,6 +322,7 @@ public partial class admin_service : System.Web.UI.Page
         {
 
             ins1.Delete_shansemail_date((Convert.ToString(Session["email_customer"])), date1);
+<<<<<<< HEAD
             //   Response.Redirect("~/Default.aspx");
         }
 
@@ -330,6 +349,12 @@ public partial class admin_service : System.Web.UI.Page
 
         Response.Redirect("~/Default.aspx");
         //**************************
+=======
+              Response.Redirect("~/Default.aspx");
+        }
+
+
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
         /*
 
@@ -713,6 +738,7 @@ public partial class admin_service : System.Web.UI.Page
      */
         #region Sending Email
 
+<<<<<<< HEAD
         sub = "";
         body = "";
         // string path = Server.MapPath("doc\\");
@@ -745,6 +771,12 @@ public partial class admin_service : System.Web.UI.Page
 
         string userName = "crypto.tradings.official@gmail.com";
         string password = "Crypto2020";
+=======
+        string smtpText = "smtp.gmail.com";
+        int portNumber = 587;
+        string userName = "cryptotrading3535@gmail.com";
+        string password = "trading3535";
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
         // string path = Server.MapPath("doc\\");
 
 
@@ -753,7 +785,11 @@ public partial class admin_service : System.Web.UI.Page
 
             SmtpClient smtp = new SmtpClient(smtpText, portNumber);
 
+<<<<<<< HEAD
             smtp.EnableSsl = false;
+=======
+            smtp.EnableSsl = true;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
 
@@ -769,9 +805,14 @@ public partial class admin_service : System.Web.UI.Page
 
 
             message.From = new MailAddress(userName);
+<<<<<<< HEAD
             message.Subject = sub;//first_name.Value + " " + last_name.Value + " (" + phone.Value + ")";
             message.IsBodyHtml = true;
             message.Body = body;//comments.Value;
+=======
+            message.Subject = "payment";//first_name.Value + " " + last_name.Value + " (" + phone.Value + ")";
+            message.Body = "testttttttttttt";//comments.Value;
+>>>>>>> fce48b032b58934f57024836247af066407eecaf
 
             smtp.Send(message);
 
