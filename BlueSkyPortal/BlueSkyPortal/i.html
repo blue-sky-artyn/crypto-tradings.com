@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <textarea id="outputdata" cols='50' rows='20'>No Data retrieved. Press 'GetData' to fetch data </textarea>
+    <br /><br />
+    <button onclick="getData()">GetData</button>
+    <button onclick="emptyData()">CleanData</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var xmlDocRefRef = null;
+
+        function getData() {
+            if (typeof window.ActiveXObject != 'undefined') {
+                xmlDocRef = new ActiveXObject("Microsoft.XMLHTTP");
+                xmlDocRef.onreadystatechange = processData;
+            }
+            else {
+                xmlDocRef = new XMLHttpRequest();
+                xmlDocRef.onload = processData;
+            }
+            xmlDocRef.open("GET", "https://www.google.com", true);
+            xmlDocRef.send(null);
+        }
+        function processData() {
+            if (xmlDocRef.readyState != 4) return;
+            document.getElementById("outputdata").value = xmlDocRef.responseText;
+        }
+        function emptyData() {
+            document.getElementById("outputdata").value = 'Data cleaned, Press GetData to fetch data';
+        }
+    </script>
+</body>
+</html>

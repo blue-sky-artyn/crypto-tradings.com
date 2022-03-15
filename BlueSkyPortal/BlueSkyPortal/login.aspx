@@ -325,7 +325,7 @@
                     <asp:TextBox ID="txtUser" runat="server" placeholder="Username" AutoCompleteType="None"></asp:TextBox>
                     <asp:TextBox ID="txtPass" runat="server" placeholder="Password" AutoCompleteType="None" TextMode="Password"></asp:TextBox>
                     <asp:Button ID="btnEnter" runat="server" CssClass="btnEnter" ClientIDMode="Static" Text="Enter" OnClick="btnEnter_Click" />
-                    <asp:Button ID="btnReg" runat="server" CssClass="btnEnter" ClientIDMode="Static" Text="Register" OnClick="btnReg_Click" />
+                    <%--<asp:Button ID="btnReg" runat="server" CssClass="btnEnter" ClientIDMode="Static" Text="Register" OnClick="btnReg_Click" />--%>
                     <asp:Label ID="lblError" runat="server" Text="Username/Password was incorrect" ForeColor="#FF3300" Visible="false"></asp:Label>
                 </div>
             </div>

@@ -1,0 +1,227 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <![endif]-->
+    <title>Aries - Metro Style Admin Panel</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+
+    <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]>
+        <link href="css/ie.css" rel="stylesheet" type="text/css" />
+        <script type='text/javascript' src='js/plugins/other/lte-ie7.js'></script>
+    <![endif]-->
+    <script type='text/javascript' src='js/plugins/jquery/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/jquery-ui-1.10.1.custom.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/jquery-migrate-1.1.1.min.js'></script>
+    <script type='text/javascript' src='js/plugins/jquery/globalize.js'></script>
+    <script type='text/javascript' src='js/plugins/other/excanvas.js'></script>
+
+    <script type='text/javascript' src='js/plugins/other/jquery.mousewheel.min.js'></script>
+
+    <script type='text/javascript' src='js/plugins/bootstrap/bootstrap.min.js'></script>
+
+    <script type='text/javascript' src='js/plugins/cookies/jquery.cookies.2.2.0.min.js'></script>
+
+    <script type='text/javascript' src='js/plugins/jflot/jquery.flot.js'></script>
+    <script type='text/javascript' src='js/plugins/jflot/jquery.flot.stack.js'></script>
+    <script type='text/javascript' src='js/plugins/jflot/jquery.flot.pie.js'></script>
+    <script type='text/javascript' src='js/plugins/jflot/jquery.flot.resize.js'></script>
+
+    <script type='text/javascript' src='js/plugins/sparklines/jquery.sparkline.min.js'></script>
+
+    <script type='text/javascript' src='js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js'></script>
+
+    <script type='text/javascript' src="js/plugins/uniform/jquery.uniform.min.js"></script>
+
+    <script type='text/javascript' src='js/plugins/shbrush/XRegExp.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shCore.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shBrushXml.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shBrushJScript.js'></script>
+    <script type='text/javascript' src='js/plugins/shbrush/shBrushCss.js'></script>
+
+    <script type='text/javascript' src='js/plugins.js'></script>
+    <script type='text/javascript' src='js/charts.js'></script>
+
+    <script type='text/javascript' src='js/actions.js'></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="loader">
+            <img src="img/loader.gif" /></div>
+        <div class="wrapper">
+
+            <div class="sidebar">
+
+                <div class="top">
+                    <a href="index-2.html" class="logo"></a>
+                    <div class="search">
+                        <div class="input-prepend">
+                            <span class="add-on orange"><span class="icon-search icon-white"></span></span>
+                            <input type="text" placeholder="search..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="nContainer">
+                    <ul class="navigation">
+                        <li class="active"><a href="default.aspx" class="blblue">Dashboard</a></li>
+                        <li>
+                            <a href="#" class="blyellow">Admin</a>
+                            <div class="open"></div>
+                            <ul>
+                                <li><a href="Insert_plans1.aspx">Insert Plans</a></li>
+                                <li><a href="insert_email.aspx">Insert Emails</a></li>
+                                <li><a href="plans.aspx">Plans</a></li>
+                                 <li><a href="Changpass_admin.aspx">Changpass</a></li>
+   
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="blgreen">Reports</a>
+                            <div class="open"></div>
+                            <ul>
+                                <li><a href="Rep_price.aspx">Overview Report</a></li>
+                                <li><a href="Rep_priceplan.aspx">Specific Report</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="close">
+                        <span class="ico-remove"></span>
+                    </a>
+                </div>
+                <div class="widget">
+                    <div class="datepicker"></div>
+                </div>
+
+            </div>
+
+
+            <div class="body">
+
+                <ul class="navigation">
+                    <li>
+                        <a href="default.aspx" class="button">
+                            <div class="icon">
+                                <span class="ico-monitor"></span>
+                            </div>
+                            <div class="name">Dashboard</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Insert_plans1.aspx" class="button yellow">
+                            <div class="arrow"></div>
+                            <div class="icon">
+                                <span class="ico-cog-2"></span>
+                            </div>
+                            <div class="name">insert Plans</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Insert_plans1.aspx" class="button green">
+                            <div class="arrow"></div>
+                            <div class="icon">
+                                <span class="ico-pen-2"></span>
+                            </div>
+                            <div class="name">Insert Emails</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plans.aspx" class="button red">
+                            <div class="icon">
+                                <span class="ico-chart-4"></span>
+                            </div>
+                            <div class="name">Plans</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="button dblue">
+                            <div class="arrow"></div>
+                            <div class="icon">
+                                <span class="ico-layout-7"></span>
+                            </div>
+                            <div class="name">Rep1</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="button purple">
+                            <div class="arrow"></div>
+                            <div class="icon">
+                                <span class="ico-box"></span>
+                            </div>
+                            <div class="name">Rep2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="button orange">
+                            <div class="arrow"></div>
+                            <div class="icon">
+                                <span class="ico-cloud"></span>
+                            </div>
+                            <div class="name">Rep3</div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="user">
+                            <img src="img/examples/users/dmitry_m.jpg" align="left" />
+                            <a href="#" class="name">
+                                <span>Crypto Tradings</span>
+                                <span class="sm">Administrator</span>
+                            </a>
+                        </div>
+                        <div class="buttons">
+                            <div class="sbutton green navButton">
+                                <a href="#"><span class="ico-align-justify"></span></a>
+                            </div>
+                            <div class="sbutton blue">
+                                <a href="#"><span class="ico-cogs"></span></a>
+                                <div class="popup">
+                                    <div class="arrow"></div>
+                                    <div class="row-fluid">
+                                        <div class="row-form">
+                                            <div class="span12"><strong>SETTINGS</strong></div>
+                                        </div>
+                                        <div class="row-form">
+                                            <div class="span4">Navigation:</div>
+                                            <div class="span8">
+                                                <input type="radio" class="cNav" name="cNavButton" value="default" />
+                                                Default
+                                                <input type="radio" class="cNav" name="cNavButton" value="bordered" />
+                                                Bordered</div>
+                                        </div>
+                                        <div class="row-form">
+                                            <div class="span4">Content:</div>
+                                            <div class="span8">
+                                                <input type="radio" class="cCont" name="cContent" value="" />
+                                                Responsive
+                                                <input type="radio" class="cCont" name="cContent" value="fixed" />
+                                                Fixed</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    <%-- Just copy the DIV with content class name inside the DIV with body class name --%>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="dialog" id="source" style="display: none;" title="Source"></div>
+
+    </form>
+</body>
+</html>

@@ -28,7 +28,7 @@
     <link rel="canonical" href="https://www.crypto-tradings.com/" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min2.css">
     <!-- Site CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Colors CSS -->
@@ -47,7 +47,7 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+     <style>
         .error-msg {
             display: none;
         }
@@ -237,7 +237,32 @@
                 left: 36%;
                 font-size: 15px;
             }
+
+        .user-text {
+            font-size: 14px !important;
+            margin: 0 10px;
+            font-style: oblique;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        .modal-close {
+            opacity: 0 !important;
+            z-index: 0 !important;
+        }
     </style>
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '27712787131340d8cf5033acb9cbdbefbc3ae7b3';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -246,7 +271,7 @@
 
     <form id="form1" runat="server">
 
-        <!-- Modal -->
+    <!-- Modal -->
         <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -257,7 +282,9 @@
                     <div class="modal-body customer-box row">
                         <div class="col-md-12">
                             <!-- Nav tabs -->
+
                             <ul class="nav nav-tabs">
+
                                 <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
                                 <li><a href="#Registration" data-toggle="tab">Registration</a></li>
                             </ul>
@@ -267,12 +294,17 @@
                                     <div role="form" class="form-horizontal">
                                         <div class="form-group">
                                             <div class="col-sm-12">
-                                                <asp:TextBox ID="txtUsername" runat="server" class="form-control" placeholder="Username"></asp:TextBox>
+
+
+
+
+
+                                                <asp:TextBox ID="txtUsername1" runat="server" class="form-control" placeholder="Email address" name="txtUsername1"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-12">
-                                                <asp:TextBox ID="txtPass" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                                <asp:TextBox ID="txtPass1" runat="server" class="form-control" placeholder="Password" TextMode="Password" name="txtPass1" type="password"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -282,11 +314,12 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-10">
-                                                <button id="btnSubmit" onserverclick="BtnSubmit_OnClick" runat="server" class="btn btn-light btn-radius btn-brd grd1">
+                                                <button onserverclick="BtnSubmit_OnClick" runat="server" class="btn btn-light btn-radius btn-brd grd1">
                                                     Submit
 								
                                                 </button>
-                                                <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+
+                                                <a class="for-pwd" href="forget-password1.aspx">Forgot your password?</a>
                                             </div>
                                         </div>
                                     </div>
@@ -295,30 +328,44 @@
                                     <div role="form" class="form-horizontal">
                                         <div class="form-group">
                                             <div class="col-sm-12">
-                                                <input class="form-control" placeholder="Name" type="text">
+                                                <asp:TextBox ID="Txt_Name" runat="server" class="form-control" placeholder="Name"></asp:TextBox>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">* Required 
+                                                <input type="email" name="name" value="" id="Txt_email1" runat="server" class="input-value form-control" placeholder="Email" autocompletetype="None"
+                                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">* Required 
+                                                <asp:TextBox ID="Txt_valet" runat="server" class="form-control" placeholder="Wallet"></asp:TextBox>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">* Required 
+                                                <asp:TextBox ID="Txt_pass" runat="server" class="form-control" type="password" placeholder="Password" name="Txt_pass"></asp:TextBox>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-sm-12">(optinal) 
+                                                <asp:TextBox ID="Txt_valetmo" runat="server" class="form-control" placeholder="Referal"></asp:TextBox>
+
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-12">
-                                                <input class="form-control" id="email" placeholder="Email" type="email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-12">
-                                                <input class="form-control" id="mobile" placeholder="Mobile" type="email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-12">
-                                                <input class="form-control" id="password" placeholder="Password" type="password">
+                                                <p id="lblError" runat="server"></p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-10">
-                                                <button type="button" class="btn btn-light btn-radius btn-brd grd1">
-                                                    Save &amp; Continue
-								
-                                                </button>
+                                                <asp:Button ID="Button1" runat="server" OnClick="Button1_OnClick" Text=" Save & Continue" class="btn btn-light btn-radius btn-brd grd1" />
                                                 <button type="button" class="btn btn-light btn-radius btn-brd grd1">
                                                     Cancel</button>
                                             </div>
@@ -369,31 +416,29 @@
                 <div class="clr">
                     <div class="part-1">
                         <div class="item-left">
-                            <a href="tel:0014123654789">
-                                <i class="fa fa-phone" style="font-size: 11px; color: #ffffff; background-color: #1e4686; padding: 14px;"></i>
-                                <span>Call Us +1 4123654789</span>
-                            </a>
+                           
                         </div>
                     </div>
                     <div class="part-2">
                         <div class="item-right">
-                            <div class="social-links-top">
+<div class="social-links-top">
                                 <a class="cz-facebook" href="https://www.facebook.com" title="Facebook" target="_blank">
                                     <i class="fa fa-facebook"></i><span>Facebook</span>
                                 </a>
-                                <a class="cz-twitter" href="https://twitter.com/" title="Twitter" target="_blank">
+                                <%--<a class="cz-twitter" href="https://twitter.com/" title="Twitter" target="_blank">
                                     <i class="fa fa-twitter"></i><span>Twitter</span>
-                                </a>
-                                <a class="cz-instagram" href="https://www.instagram.com" title="Instagram" target="_blank">
+                                </a>--%>
+                                <a class="cz-instagram" href="https://www.instagram.com/crypto_tradings2021/" title="Instagram" target="_blank">
                                     <i class="fab fa fa-instagram"></i><span>Instagram</span>
                                 </a>
-                                <a class="cz-telegram-plane" href="https://t.me" title="Telegram" target="_blank">
+                                <a class="cz-telegram-plane" href="https://t.me/Cryptotradingscanadanews" title="Telegram" target="_blank">
                                     <i class="fab fa fa-telegram"></i><span>Telegram</span>
                                 </a>
                                 <a class="cz-youtube" href="https://www.youtube.com/" title="Youtube" target="_blank">
                                     <i class="fab fa fa-youtube"></i><span>Youtube</span>
                                 </a>
                             </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -415,21 +460,14 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a <%--class="active"--%> href="default.aspx">Home</a></li>
-                            <li class="menu-drop"><a>Services </a>
-                                <ul id="serviceMenuHtml" runat="server" class="dropdown-menu">
-                                </ul>
-                            </li>
-                            <li><a href="information.aspx">information</a></li>
-                            <li><a href="news.aspx">news</a></li>
+                            <li><a href="news.aspx">News</a></li>
                             <li><a href="faq.aspx">FAQ</a></li>
                             <li><a href="about.aspx">About</a></li>
-                            <li class="menu-drop"><a>Gallery</a>
-                                <ul id="galleryMenuHtml" runat="server" class="dropdown-menu">
-                                </ul>
-                            </li>
+                            
                             <li><a href="contact.aspx">Contact</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
+                            <li><a id="userProfile" runat="server" href="#" CssClass="user-text">Guest</a></li>
                             <li><a class="btn-light btn-radius btn-brd log" href="#" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
                         </ul>
                     </div>
@@ -437,12 +475,13 @@
             </nav>
         </header>
         <div id="socialsHtml" runat="server" class="icon-bar">
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="google"><i class="fa fa-google"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <%--<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>--%>
+            <%--<a href="#" class="google"><i class="fa fa-google"></i></a>--%>
+            <%--<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>--%>
             <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa fa-telegram"></i></a>
+            <a href="https://www.instagram.com/crypto_tradings2021/" class="google"><i class="fa fa-instagram"></i></a>
         </div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
@@ -509,28 +548,27 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </footer><!-- end footer -->--%>
-        </div>
-   
-            <div class="copyrights">
-                <div class="container">
-                    <div class="footer-distributed">
-                        <div class="footer-left">
-                            <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Decowall Co.</a></p>
-                        </div>
-                        <div class="footer-left">
-                            <h1 itemprop="image" class="footer-company-name" style="float: left; font-size: 12px; padding: 25px 0;"><a href="#">General Trading</a> </h1>
-                            <h1 itemprop="image" class="footer-company-name" style="float: left; font-size: 12px; padding: 25px 0;"><a href="#">GeneralTrading (General Trading)</a></h1>
-                        </div>
-                        <div class="footer-right">
-                            <div>
-                                <input placeholder="Subscribe our newsletter.." name="search">
-                                <i class="fa fa-envelope-o"></i>
-                            </div>
+       
+        <div class="copyrights">
+            <div class="container">
+                <div class="footer-distributed">
+                    <div class="footer-left">
+                        <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">Decowall Co.</a></p>
+                    </div>
+                    <div class="footer-left">
+                        <h1 itemprop="image" class="footer-company-name" style="float: left; font-size: 12px; padding: 25px 0;"><a href="#">Crypto Tradings</a> </h1>
+                        <h1 itemprop="image" class="footer-company-name" style="float: left; font-size: 12px; padding: 25px 0;"><a href="#">CryptoTradings (Crypto Trading)</a></h1>
+                    </div>
+                    <div class="footer-right">
+                        <div>
+                            <input placeholder="Subscribe our newsletter.." name="search">
+                            <i class="fa fa-envelope-o"></i>
                         </div>
                     </div>
                 </div>
-                <!-- end container -->
             </div>
+            <!-- end container -->
+        </div>
         <!-- end copyrights -->
 
 

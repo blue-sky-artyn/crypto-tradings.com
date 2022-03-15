@@ -29,11 +29,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h4>Manager and cofounder</h4>
-                        <h2>Arash Farshid - Sam Nazemi</h2>
+                        <h4>Trade your curencies</h4>
+                        <h2>Crypto Tradings</h2>
                         <p id="ownerWordHtml" runat="server" class="lead"></p>
 
-                        <p id="coDetHtml" runat="server">Company word</p>
+                        <p id="coDetHtml" runat="server">Company is located in Canada and this compny support and invest in reaserching project and also in expanding its work in of designing EVC(Electrical vehicle charging) project. We also invest in digital currency markert ,plus, investing money in mass production of skyscraper. We are open for every golden oppurtunities to invest.</p>
 
                         
                     </div><!-- end messagebox -->
@@ -41,68 +41,20 @@
 				
 				<div class="col-md-6">
                     <div class="post-media wow fadeIn">
-                        <img src="images/top1.jpg" alt="bondelectric company" class="img-responsive img-rounded">
+                        <img src="images/cer2.jpeg" alt="Crypto Trading company" class="img-responsive img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->
 
             <hr class="invis"> 
-
-            <div id="portfolioHtml" runat="server">   
-            <div class="row"> 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-wrapper-portfolio wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <img class="portfolio-img" src="images/portfolio/4.jpg" alt="" />
-                        <h3>Unlimited Bandwidth</h3>
-                        <p class="portfolio-para">Our Landigoo responsive site template elements 100% compatible with all mobile devices and modern browsers! <small class="readmore"><a href="#">Read more</a></small></p>
-                    </div><!-- end icon-wrapper -->
-                </div><!-- end col -->
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <i class="flaticon-cloud-computing-1 global-radius effect-1 alignleft"></i>
-                        <h3>Unlimited Traffic</h3>
-                        <p>When you need anything about for Landigoo template, just drop an email or leave a feedback from TF!<small class="readmore"><a href="#">Read more</a></small></p>
-                    </div><!-- end icon-wrapper -->
-                </div><!-- end col -->
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <i class="flaticon-world-wide-web global-radius effect-1 alignleft"></i>
-                        <h3>1 Domain Free</h3>
-                        <p>We offer pixel perfect icons, graphic sources for high-resolution devices! Landigoo compatible retina display! <small class="readmore"><a href="#">Read more</a></small></p>
-                    </div><!-- end icon-wrapper -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-
-            <hr class="hr3"> 
-
-            <div class="row"> 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <i class="flaticon-cup global-radius effect-1 alignleft"></i>
-                        <h3>Awards Winner Support</h3>
-                        <p>Our Landigoo responsive site template elements 100% compatible with all mobile devices and modern browsers! <small class="readmore"><a href="#">Read more</a></small></p>
-                    </div><!-- end icon-wrapper -->
-                </div><!-- end col -->
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <i class="flaticon-cer-file-format global-radius effect-1 alignleft"></i>
-                        <h3>Free SSL Certifica</h3>
-                        <p>We offer pixel perfect icons, graphic sources for high-resolution devices! Landigoo compatible retina display! <small class="readmore"><a href="#">Read more</a></small></p>
-                    </div><!-- end icon-wrapper -->
-                </div><!-- end col -->
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <i class="flaticon-locked global-radius effect-1 alignleft"></i>
-                        <h3>High Security</h3>
-                        <p>When you need anything about for Landigoo template, just drop an email or leave a feedback from TF!<small class="readmore"><a href="#">Read more</a></small></p>
-                    </div><!-- end icon-wrapper -->
-                </div><!-- end col -->
-            </div><!-- end row -->
+            <div class="row">
+				<div class="col-md-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/cer1.jpeg" alt="Crypto Trading company" class="img-responsive img-rounded">
+                    </div>
+                </div>
             </div>
+            <hr class="invis"> 
         </div><!-- end container -->
     </div><!-- end section -->
 
